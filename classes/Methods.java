@@ -30,5 +30,18 @@ public class Methods {
 		System.out.println("4 --> European extreme (only for experts)");
 		user.setDifficultyChoice(keyboardInput.nextInt());
 	}
+	// method that saves every response in order
+	
+	// method that checks the password with the user responses
+	
+	public void passwordChecker(Boss boss) {
+		String[] password = boss.getPassword();
+		
+		for (int i = 0; i < password.length; i++) {
+			if(password[i] == "a") {
+				
+			}
+		}
+	}
 
 }
