@@ -36,4 +36,9 @@ public class WalletMaths {
 			break;
 		}
 	}
+	
+	public void wrongAnswer(User user) {
+		
+	}
+	
 }

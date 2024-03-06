@@ -67,7 +67,7 @@ public class Boss {
 	public Boss secondBoss(Boss snake) {
 		snake = new Boss("Snake the unfaithful", "Romania", 2.7);
 
-		String[] password = { "jagger meister", "whiskey", "cat", "copper", "marihuana", "bmw" };
+		String[] password = { "jagger", "whiskey", "cat", "copper", "marihuana", "bmw" };
 		snake.setPassword(password);
 		return snake;
 	}

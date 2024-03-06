@@ -21,7 +21,7 @@ public class Program {
 		vladimir.firstBoss(vladimir);
 		snake.secondBoss(snake);
 		butterfly.thirdBoss(butterfly);
-
+		
 		// creating an user
 		method.characterCreation(user);
 
