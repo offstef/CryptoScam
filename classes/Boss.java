@@ -56,24 +56,24 @@ public class Boss {
 
 	// creating the bosses
 
-	public Boss firstBoss(Boss vladimir) {
-		vladimir = new Boss("Vladimir A.K.A vodka till coma", "Rusia", 50.2);
+	public static Boss firstBoss() {
+		Boss vladimir = new Boss("Vladimir A.K.A vodka till coma", "Rusia", 50.2);
 
 		String[] password = { "vodka", "bear", "horse", "cocaine", "ak47", "communist" };
 		vladimir.setPassword(password);
 		return vladimir;
 	}
 
-	public Boss secondBoss(Boss snake) {
-		snake = new Boss("Snake the unfaithful", "Romania", 2.7);
+	public static Boss secondBoss() {
+		Boss snake = new Boss("Snake the unfaithful", "Romania", 2.7);
 
 		String[] password = { "jagger", "whiskey", "cat", "copper", "marihuana", "bmw" };
 		snake.setPassword(password);
 		return snake;
 	}
 
-	public Boss thirdBoss(Boss butterfly) {
-		butterfly = new Boss("Butterfly A.K.A White Death", "Japan", 10.5);
+	public static Boss thirdBoss() {
+		Boss butterfly = new Boss("Butterfly A.K.A White Death", "Japan", 10.5);
 
 		String[] password = { "samurai", "anime", "mafia", "legend", "katana", "eyes" };
 		butterfly.setPassword(password);

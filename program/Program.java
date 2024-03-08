@@ -13,21 +13,29 @@ public class Program {
 		Methods method = new Methods();
 		WalletMaths wallet = new WalletMaths();
 		User user = new User();
-		Boss vladimir = new Boss();
-		Boss snake = new Boss();
-		Boss butterfly = new Boss();
 
 		// bosses integration
-		vladimir.firstBoss(vladimir);
-		snake.secondBoss(snake);
-		butterfly.thirdBoss(butterfly);
-		
+		Boss vladimir = Boss.firstBoss();
+		Boss butterfly = Boss.secondBoss();
+		Boss snake = Boss.thirdBoss();
+
 		// creating an user
 		method.characterCreation(user);
 
 		// setting difficulty
 		method.chooseDifficulty(user);
 		wallet.WalletCuantity(user);
+
+		// presentation of the first boss
+		method.presentationBoss(user, vladimir);
+
+		// questions and answers
+		method.firstBossQuestions(vladimir);
+		
+		// checking the responses
+		method.responseChecker(vladimir, user, wallet);
+		method.responseChecker(butterfly, user, wallet);
+		method.responseChecker(snake, user, wallet);
 
 	}
 
