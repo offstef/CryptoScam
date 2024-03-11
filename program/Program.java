@@ -29,8 +29,18 @@ public class Program {
 
 		// first boss challenge
 		method.presentationBoss(user, vladimir);
-		responses = method.firstBossQuestions(vladimir);
+		responses = method.bossQuestions(vladimir);
 		method.responseChecker(vladimir, user, wallet, responses);
+
+		// second boss challenge
+		method.presentationBoss(user, snake);
+		responses = method.bossQuestions(snake);
+		method.responseChecker(snake, user, wallet, responses);
+
+		// third boss challenge
+		method.presentationBoss(user, butterfly);
+		responses = method.bossQuestions(butterfly);
+		method.responseChecker(butterfly, user, wallet, responses);
 
 	}
 

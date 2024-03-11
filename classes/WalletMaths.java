@@ -4,6 +4,10 @@ public class WalletMaths {
 	Methods method = new Methods();
 	private double userInitialWealth;
 
+	public void setUserInitialWealth(double userInitialWealth) {
+		this.userInitialWealth = userInitialWealth;
+	}
+
 	public double getUserInitialWealth() {
 		return userInitialWealth;
 	}

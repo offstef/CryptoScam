@@ -59,7 +59,7 @@ public class Boss {
 	public static Boss firstBoss() {
 		Boss vladimir = new Boss("Vladimir A.K.A vodka till coma", "Rusia", 50.2);
 
-		String[] password = { "vodka", "bear", "horse", "cocaine", "ak47", "communist" };
+		String[] password = { "vodka", "bear", "horse", "cocaine", "ak47", "communism" };
 		vladimir.setPassword(password);
 		return vladimir;
 	}
