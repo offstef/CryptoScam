@@ -51,14 +51,17 @@ public class Program {
 			System.out.println("Congratulations!, you´ve completed the game...");
 			break;
 		case 2:
+			// autodescriptive, sees the bosses
 			method.bossesViewer();
 			break;
 		case 3:
+			// creates a boss, then if he wants to delete something he can
 			Boss userBoss = method.userCreatesBoss();
 			Boss modifiedUserBoss = method.userChecksBoss(userBoss);
 			method.userNewBossUpdated(userBoss, modifiedUserBoss);
 			break;
 		case 4:
+			// shows the intructions for the program 
 			method.instructions();
 			break;
 		default:
