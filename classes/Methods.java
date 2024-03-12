@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Methods {
 	static Scanner keyboardInput = new Scanner(System.in);
 
-	// CryptoScam banner
+	/**
+	 * This method prints a banner consisting of ASCII art.
+	 */
 	public void banner() {
 		System.out.println("▄████▄  ██▀███▓██   ██▓██▓███ ▄▄▄█████▓▒█████   ██████ ▄████▄  ▄▄▄      ███▄ ▄███▓");
 		System.out.println("▒██▀ ▀█ ▓██ ▒ ██▒██  ██▓██░  ██▓  ██▒ ▓▒██▒  ██▒██    ▒▒██▀ ▀█ ▒████▄   ▓██▒▀█▀ ██▒");
@@ -17,7 +19,7 @@ public class Methods {
 		System.out.println("░         ░░   ░▒ ▒ ░░ ░░        ░     ░ ░ ░ ▒ ░  ░  ░ ░         ░   ▒  ░      ░   ");
 		System.out.println("░ ░        ░    ░ ░                        ░ ░       ░ ░ ░           ░  ░      ░   ");
 		System.out.println("░               ░ ░                                    ░                           ");
-		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
+		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 	}
 
 	/**
