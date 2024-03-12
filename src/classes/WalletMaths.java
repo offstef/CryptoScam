@@ -19,7 +19,7 @@ public class WalletMaths {
 	 *
 	 * @param user The user for whom the initial wallet amount will be set.
 	 */
-	public void WalletCuantity(User user) {
+	public void walletCuantity(User user) {
 
 		switch (user.getDifficultyChoice()) {
 		case 1:
@@ -38,7 +38,7 @@ public class WalletMaths {
 			System.out.println("Try again...");
 			// This is a loop until a valid difficulty is selected.
 			method.chooseDifficulty(user);
-			WalletCuantity(user);
+			walletCuantity(user);
 			break;
 		}
 	}

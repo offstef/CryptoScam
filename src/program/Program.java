@@ -33,7 +33,7 @@ public class Program {
 			method.characterCreation(user);
 			// setting difficulty
 			method.chooseDifficulty(user);
-			wallet.WalletCuantity(user);
+			wallet.walletCuantity(user);
 			// first boss challenge
 			method.presentationBoss(user, vladimir);
 			responses = method.bossQuestions(vladimir);
