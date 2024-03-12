@@ -23,9 +23,9 @@ public class Methods {
 	/**
 	 * Initial menu options and prompts the user to choose an action.
 	 *
-	 * @return The integer representing the user's choice. 1 for playing the game, 2
-	 *         for viewing the bosses, 3 for creating a custom boss, 4 for viewing
-	 *         the instructions.
+	 * @return representing the user's choice. 1 for playing the game, 2 for viewing
+	 *         the bosses, 3 for creating a custom boss, 4 for viewing the
+	 *         instructions.
 	 */
 	public int initialMenuChoice() {
 		System.out.println("What would you like to do");
@@ -43,9 +43,9 @@ public class Methods {
 	 * Character creation process for the user by collecting alias and country
 	 * information.
 	 * 
-	 * @param user The User object to which the created character information will
-	 *             be assigned.
-	 * @return The User object with updated alias and country information.
+	 * @param user object to which the created character information will be
+	 *             assigned.
+	 * @return object with updated alias and country information.
 	 */
 	public User characterCreation(User user) {
 		banner();
@@ -78,10 +78,9 @@ public class Methods {
 	/**
 	 * Presentation of the boss to the user.
 	 * 
-	 * @param user The User object to whom the boss presentation is addressed.
-	 * @param boss The Boss object representing the boss to be presented.
+	 * @param user object to whom the boss presentation is addressed.
+	 * @param boss object representing the boss to be presented.
 	 */
-
 	public void presentationBoss(User user, Boss boss) {
 		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 		System.out.println(user.getAlias());
@@ -104,7 +103,7 @@ public class Methods {
 			for (int i = 0; i < password.length; i++) {
 				switch (password[i]) {
 				case "vodka":
-					System.out.println("What´s the most dricked alcohol in Russia?");
+					System.out.println("What´s the most drinked alcohol in Russia?");
 					break;
 				case "bear":
 					System.out.println("What fighted Khabib as a child?");
@@ -162,13 +161,13 @@ public class Methods {
 					System.out.println("What is the cartoon asociated with otakus? ");
 					break;
 				case "mafia":
-					System.out.println("A _____ is a organized group, an example is the Yakuzas");
+					System.out.println("A _____ is a organized criminal group, an example is the Yakuzas");
 					break;
 				case "legend":
-					System.out.println("When a epic character dies, his alias will now be L____d");
+					System.out.println("When a epic character dies, his new alias will be L____d");
 					break;
 				case "katana":
-					System.out.println("A samurai has a ....");
+					System.out.println("A samurai has a ......");
 					break;
 				case "eyes":
 					System.out.println("The _____ are used to see");
@@ -177,7 +176,6 @@ public class Methods {
 				responsesBoss[i] = keyboardInput.next();
 				keyboardInput.nextLine();
 			}
-
 			break;
 		}
 		return responsesBoss;
@@ -250,20 +248,19 @@ public class Methods {
 	 * 
 	 * The method prints information about each boss's name, nationality, and
 	 * wealth, excluding their passwords. It also includes a banner at the beginning
-	 * and end of the display.
+	 * of the display.
 	 */
 	public void bossesViewer() {
 		banner();
 		System.out.println("The first wallet it´s propiety of");
 		System.out.println(Boss.firstBoss().toStringWithoutPassword());
-		System.out.println();
-
+		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 		System.out.println("The second wallet it´s propiety of");
 		System.out.println(Boss.secondBoss().toStringWithoutPassword());
-		System.out.println();
-
+		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 		System.out.println("The third wallet it´s propiety of");
 		System.out.println(Boss.thirdBoss().toStringWithoutPassword());
+		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 		System.out.println("I can´t say you the password of each wallet, it´s secret... shhh");
 		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 	}
@@ -284,6 +281,7 @@ public class Methods {
 		System.out.print("How many BTC will manage?: ");
 		double wealth = keyboardInput.nextDouble();
 		keyboardInput.nextLine();
+
 		System.out.println("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿");
 		System.out.println("Now you are going to create a password");
 		String[] password = new String[6];
