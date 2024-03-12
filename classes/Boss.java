@@ -54,10 +54,19 @@ public class Boss {
 		return "" + name + ", " + country + ", " + bitcoinWealth + "BTC, " + Arrays.toString(password);
 	}
 
-	// creating the bosses
+	public String toStringWithoutPassword() {
+		return "" + name + ", " + country + ", " + bitcoinWealth + "BTC";
+	}
+
+	/**
+	 * Creates and returns the boss object with predefined attributes.
+	 *
+	 * @return The boss object created with a specific name, nationality, and
+	 *         health.
+	 */
 
 	public static Boss firstBoss() {
-		Boss vladimir = new Boss("Vladimir A.K.A vodka till coma", "Rusia", 50.2);
+		Boss vladimir = new Boss("Vladimir A.K.A vodka till coma", "Rusia", 200.2);
 
 		String[] password = { "vodka", "bear", "horse", "cocaine", "ak47", "communism" };
 		vladimir.setPassword(password);
@@ -65,7 +74,7 @@ public class Boss {
 	}
 
 	public static Boss secondBoss() {
-		Boss snake = new Boss("Snake the unfaithful", "Romania", 2.7);
+		Boss snake = new Boss("Snake the unfaithful", "Romania", 130.6);
 
 		String[] password = { "jagger", "whiskey", "cat", "copper", "marihuana", "bmw" };
 		snake.setPassword(password);
@@ -73,7 +82,7 @@ public class Boss {
 	}
 
 	public static Boss thirdBoss() {
-		Boss butterfly = new Boss("Butterfly A.K.A White Death", "Japan", 10.5);
+		Boss butterfly = new Boss("Butterfly A.K.A White Death", "Japan", 69.7);
 
 		String[] password = { "samurai", "anime", "mafia", "legend", "katana", "eyes" };
 		butterfly.setPassword(password);
